@@ -58,8 +58,6 @@ class GameViewModel : ViewModel() {
             //Select and remove a word from the list
             word = wordList.removeAt(0)
         }
-        updateWordText()
-        updateScoreText()
     }
     /** Methods for buttons presses **/
     fun onSkip() {
@@ -72,10 +70,6 @@ class GameViewModel : ViewModel() {
         nextWord()
     }
 
-    override fun onCleared() {
-        super.onCleared()
-        Log.i("GameViewModel", "GameViewModel destroyed!")
-    }
 }
 
 
